@@ -1,7 +1,6 @@
 import Stack from '@mui/material/Stack';
 import Container from '@mui/material/Container';
 
-import Header from '../common/header-simple';
 
 // ----------------------------------------------------------------------
 
@@ -11,10 +10,7 @@ type Props = {
 
 export default function CompactLayout({ children }: Props) {
   return (
-    <>
-      <Header />
-
-      <Container component="main">
+    <Container component="main">
         <Stack
           sx={{
             py: 12,
@@ -28,6 +24,5 @@ export default function CompactLayout({ children }: Props) {
           {children}
         </Stack>
       </Container>
-    </>
   );
 }
